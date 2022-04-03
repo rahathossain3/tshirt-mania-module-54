@@ -152,4 +152,14 @@
 
    <!-- // 3 get context or declare a component for use -->
     const ring = useContext(RingContext);
-#
+
+
+# netlify problem solve 
+
+
+## So to fix the issue, we need to create a file named _redirects to the root of our site [public folder of App] with the following content.
+
+<!-- file name -->
+    _redirects 
+<!-- file data -->
+        /* /index.html 200
