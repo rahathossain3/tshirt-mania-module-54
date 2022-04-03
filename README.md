@@ -110,6 +110,17 @@
 
     (https://reactjs.org/docs/hooks-reference.html)
 
+## Context api using rules 
+    1. Call CreateContext With a default Value
+    2. set a variable of the context with uppercase
+    3. Make sure You export the context to use it in other places
+    4. Wrap you child content using  RingContext.Provider
+    5. Provide a value
+    6. consume the context from child component
+    7. useContext hook and you will you need to pass the contextName
+    8. make sure you take notes......
+
+
 
 ## context api
    <!-- 1  (write outside of a function )-->
