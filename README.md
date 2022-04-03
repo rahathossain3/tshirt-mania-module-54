@@ -100,3 +100,44 @@
 #### 4            
             {/* 4 */}
             {cart.length === 0 || <p className='orange'> Yay ! you are buying</p>}
+
+
+
+## Video 7
+
+### react context api
+    (https://reactjs.org/docs/context.html#reactcreatecontext)
+
+    (https://reactjs.org/docs/hooks-reference.html)
+
+
+## context api
+   <!-- 1  (write outside of a function )-->
+
+   export const RingContext = createContext('ring');
+
+
+<!-- 2  area set using <RingContext>-->
+
+    // <RingContext.Provider value='alur ring'>
+       <RingContext.Provider value={ornament}>
+            <div className='grandpa'>
+                <h4>Grandpa</h4>
+
+                <p>House : {house}
+                    <button
+                        onClick={handelBuyAHouse}
+                    > Buy a House </button>
+                </p>
+                <section style={{ display: 'flex' }}>
+                    <Father house={house} ornament={ornament}></Father>
+                    <Aunty house={house}></Aunty>
+                    <Uncle house={house}></Uncle>
+                </section>
+
+            </div>
+        </RingContext.Provider>
+
+
+   <!-- // 3 get context or declare a component for use -->
+    const ring = useContext(RingContext);
