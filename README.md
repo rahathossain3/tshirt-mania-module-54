@@ -1,6 +1,6 @@
 ## Video 1
 
-## Custom Link: 
+## Custom Link (Active link): 
 <!-- create a component -->
 
     function CustomLink({ children, to, ...props }) {
